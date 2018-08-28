@@ -1,7 +1,7 @@
 .resume-container {
-  margin-top: 650px;
+  margin-top: 620px;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   background-color: #f2f2f2;
   font-size: 21px;
   text-align: center;
@@ -10,7 +10,7 @@
 }
 
 .resume-column {
-  padding: 20px;
+  padding: 20px 20px 20px 0;
   float: left;
   width: 50%;
   height: 100%;
@@ -38,7 +38,7 @@
 }
 
 .resume-column ul {
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .resume-column:nth-child(1) ul {
@@ -52,11 +52,11 @@
   text-align: left;
 }
 
-.resume-column > ul > li {
+.resume-column>ul>li {
   font-size: 0.8em;
 }
 
-.resume-column > ul > li:nth-child(odd) {
+.resume-column>ul>li:nth-child(odd) {
   margin-top: 20px;
 }
 
@@ -64,6 +64,17 @@
   font-weight: normal;
   font-size: 0.7em;
   color: rgba(0, 0, 0, 0.4);
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+  -webkit-animation: fadein 3s;
+  animation: fadein 3s;
+}
+
+.resume-column ul li div {
+  font-weight: normal;
+  font-size: 0.7em;
+  color: rgba(0, 0, 0, 0.4);
+  font-style: italic;
 }
 
 @keyframes scroll {
