@@ -1,43 +1,10 @@
 .works-container {
-  height: 500px;
   width: 100%;
   font-size: 21px;
-  line-height: 500px;
   color: #fff;
-  text-align: center;
+  text-align: left;
   background: #50a3a2;
   background: #50a3a2;
   background: -webkit-linear-gradient(top left, #50a3a2 0%, #2eca7f 100%);
   background: linear-gradient(to bottom right, #50a3a2 0%, #2eca7f 100%);
-}
-
-.works-container div {
-  -webkit-animation: fadein 2s;
-  animation: fadein 2s;
-}
-
-@keyframes fadein {
-  from {
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadein {
-  from {
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
