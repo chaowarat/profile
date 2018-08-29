@@ -23,10 +23,28 @@ const experiences = [
   {
     title: 'Research Assistance (2013)',
     description: 'Software Developer โครงการการพัฒนาฐานข้อมูลสารสนเทศเพื่อการดูแลเด็กด้อยโอกาสนอกระบบและเด็กกลุ่มเสี่ยงในระบบการศึกษางบประมาณ สำนักงานส่งเสริมสังคมแห่งการเรียนรู้และพัฒนาคุณภาพเยาวชน'
+  },
+  {
+    title: 'Internship (2012)',
+    description: 'Agile: Story Board, Card, Estimate card, Stand-up meeting. Language skills: Python, Script',
+    location: 'Proteus Technologies Inc.'
+  },
+  {
+    title: 'Workshop (2012)',
+    description: 'Python: Zumo Game, Java: Snake and Bomb Game',
+    location: 'Naresuan University.'
   }
 ]
 
 const educations = [
+  {
+    title: '(2014) Thesis',
+    description: 'Personal Assistant For Education Personnel ผู้ช่วยส่วนบุคคลสำหรับบุคลากรด้านการศึกษา. Language & Technical: Polymer, Javascript, Nodejs, Restfull Service, Level DB, SQL DB and Mongo DB. Submission การประชุมวิชาการเสนอผลงานวิจัยระดับบัณฑิตศึกษาแห่งชาติ ครั้งที่ 40, มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตหาดใหญ่'
+  },
+  {
+    title: '(2014) Journal',
+    description: 'Naresuan University Engineering Journal. Distributed Data Integation on Client Side การบูรณาการข้อมูลแบบกระจายบนเครื่องลูกข่าย. Submission: Naresuan University. Language & Technical: Polymer, Javascript, Nodejs, Restfull Service, Level DB, SQL DB and Mongo DB'
+  },
   {
     title: '(2014) Master of Computer Engineering at Naresuan University',
     description: 'Enterprise Information Systems and Special Topics in Computer Engineering and Applied Computing'
@@ -34,6 +52,10 @@ const educations = [
   {
     title: '(2013) Master of Computer Engineering at Naresuan University',
     description: 'Mathematics for Graduate Studies in Computer Engineering, Advanced Computer Architectures and Organizations, Advanced Digital Image Processing, Data Integration, Advanced Algorithm Analysis and Design, Software Engineering Design and Management and Research Methodology in Science and Technology'
+  },
+  {
+    title: '(2012) Senior Project',
+    description: 'Recommendation system and Disabilities Child Care Referral ระบบการให้คำแนะนำและการส่งต่อข้อมูลการดูแลเด็กพิการโดยวิธีการ HL7 V3. Language & Technical C#, asp.net web application, asp.net web services'
   },
   {
     title: '(2012) Bachelor of Computer Engineering at Naresuan University',

@@ -25,7 +25,7 @@ class App extends Component {
     if ((wScroll + 300) > sectionHeight * 2 && !visibleSection['section3']) {
       visibleSection['section3'] = true
       this.setState({ visibleSection })
-    } else if ((wScroll + 200) > sectionHeight && !visibleSection['section2']) {
+    } else if (wScroll > 100 && !visibleSection['section2']) {
       visibleSection['section2'] = true
       this.setState({ visibleSection })
     }
