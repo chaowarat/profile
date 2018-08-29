@@ -8,6 +8,7 @@ export default class ArtCard extends Component {
       <div className="artcard-container" style={{ animationDelay: delay + 's' }}>
         <div className="image">
           <img src={data.image} alt="" />
+          <span className="year">{data.year}</span>
         </div>
 
         <div className="middle">

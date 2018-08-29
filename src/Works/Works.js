@@ -1,97 +1,118 @@
 import React, { Component } from 'react'
 import './Works.css'
 import ArtCard from './ArtCard'
-import Cover1 from '../images/cct/cover.png'
+import CoverCCT from '../images/cct/cover.png'
 
-import Cover2 from '../images/attendance/cover.png'
+import CoverGraph from '../images/graph/cover.png'
 
-import Cover3 from '../images/cctold/cover.png'
+import CoverOOSCApp from '../images/ooscapp/cover.png'
 
-import Cover4 from '../images/development/cover.png'
+import CoverOOSCWeb from '../images/ooscweb/cover.png'
 
-import Cover5 from '../images/graph/cover.png'
+import CoverQAttendance from '../images/qattendance/cover.png'
 
-import Cover6 from '../images/homevisit/cover.png'
+import CoverAttendance from '../images/attendance/cover.png'
 
-import Cover7 from '../images/location/cover.png'
+import CoverCCTOld from '../images/cctold/cover.png'
 
-import Cover8 from '../images/ooscapp/cover.png'
+import CoverDevelopment from '../images/development/cover.png'
 
-import Cover9 from '../images/ooscweb/cover.png'
+import CoverHomevisit from '../images/homevisit/cover.png'
 
-import Cover10 from '../images/qattendance/cover.png'
+import CoverLocation from '../images/location/cover.png'
 
-import Cover11 from '../images/seniorproject/cover.png'
+import CoverThesis from '../images/thesis/cover.png'
 
-import Cover12 from '../images/thesis/cover.png'
+import CoverWeightHeight from '../images/weightheight/cover.png'
 
-import Cover13 from '../images/weightheight/cover.png'
+import CoverSeniorProject from '../images/seniorproject/cover.png'
+
+import CoverPM from '../images/projectmanagement/cover.png'
 
 const works = [
   {
-    image: Cover1,
+    image: CoverCCT,
+    year: '2018',
     title: 'CCT (React Native)',
     subtitle: 'GPS, Photo, Mongo, Online Offline, JWT, Sharing and Address'
   },
   {
-    image: Cover2,
-    title: 'Attendance (React Native)',
-    subtitle: 'Mongo DB, Online-Offline mode and JWT Service'
-  },
-  {
-    image: Cover3,
-    title: 'CCT (Java)',
-    subtitle: 'Old version of CCT App. Sqlite, image gallery and web service'
-  },
-  {
-    image: Cover4,
-    title: 'พัฒนาการเด็ก (Codova)',
-    subtitle: 'Codova build to android, Restfull Service (C#), SQL Server and SQLite'
-  },
-  {
-    image: Cover5,
+    image: CoverGraph,
+    year: '2018',
     title: 'Social Graph (ReactJS and etc)',
     subtitle: 'ReactJS, Vuejs, Cayley, Sigma, d3js and Neo4j'
   },
   {
-    image: Cover6,
-    title: 'แบบเยี่ยมบ้าน (Codova)',
-    subtitle: 'Android, Google Map, Take photo, Restfull Service (C#), SQL and SQLite'
+    image: CoverPM,
+    year: '2018',
+    title: 'ระบบบริหารจัดการโครงการ (ReactJS)',
+    subtitle: 'ReactJS, Redux, Mongo DB and JWT'
   },
   {
-    image: Cover7,
-    title: 'พิกัดโรงเรียน (Java)',
-    subtitle: 'Java Native, GPS, Restfull Service (C#), SQL Server and SQLite'
-  },
-  {
-    image: Cover8,
+    image: CoverOOSCApp,
+    year: '2017',
     title: 'ThaiOOSC (React Native)',
     subtitle: 'Mongo DB, Online-Offline mode and JWT Service'
   },
   {
-    image: Cover9,
+    image: CoverOOSCWeb,
+    year: '2017',
     title: 'ThaiOOSC web (ReactJS)',
     subtitle: 'ReactJS, Mongo DB, JWT Service and Google Map'
   },
   {
-    image: Cover10,
+    image: CoverQAttendance,
+    year: '2017',
     title: 'Q-Attendance (React Native)',
     subtitle: 'Mongo DB, Online Offline, JWT, Restfull Service (C#) and SQL'
   },
   {
-    image: Cover11,
-    title: 'Senior Project (C#)',
-    subtitle: 'asp.net web application, asp.net web services'
+    image: CoverAttendance,
+    year: '2016',
+    title: 'Attendance (React Native)',
+    subtitle: 'Mongo DB, Online-Offline mode and JWT Service'
   },
   {
-    image: Cover12,
+    image: CoverCCTOld,
+    year: '2016',
+    title: 'CCT (Java)',
+    subtitle: 'Old version of CCT App. Sqlite, image gallery and web service'
+  },
+  {
+    image: CoverDevelopment,
+    year: '2016',
+    title: 'พัฒนาการเด็ก (Codova)',
+    subtitle: 'Codova build to android, Restfull Service (C#), SQL Server and SQLite'
+  },
+  {
+    image: CoverHomevisit,
+    year: '2016',
+    title: 'แบบเยี่ยมบ้าน (Codova)',
+    subtitle: 'Android, Google Map, Take photo, Restfull Service (C#), SQL and SQLite'
+  },
+  {
+    image: CoverLocation,
+    year: '2016',
+    title: 'พิกัดโรงเรียน (Java)',
+    subtitle: 'Java Native, GPS, Restfull Service (C#), SQL Server and SQLite'
+  },
+  {
+    image: CoverThesis,
+    year: '2016',
     title: 'Thesis (Polymer)',
     subtitle: 'Polymer, Javascript, Nodejs, Restfull Service, Level DB, SQL and Mongo DB'
   },
   {
-    image: Cover13,
+    image: CoverWeightHeight,
+    year: '2016',
     title: 'น้ำหนักส่วนสูง (Java)',
     subtitle: 'Java Native, Restfull Service (C#), SQL Server and SQLite'
+  },
+  {
+    image: CoverSeniorProject,
+    year: '2013',
+    title: 'Senior Project (C#)',
+    subtitle: 'asp.net web application, asp.net web services'
   }
 ]
 

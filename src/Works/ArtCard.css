@@ -34,6 +34,15 @@
   filter: drop-shadow(8px 6px 5px rgba(0, 0, 0, 0.5));
 }
 
+.artcard-container .image .year {
+  font-size: 12px;
+  color: #171717;
+  position: absolute;
+  top: 195px;
+  right: 5px;
+  font-style: italic;
+}
+
 .artcard-container:hover .image {
   opacity: 0.3;
 }

@@ -21,8 +21,9 @@ class App extends Component {
 
   handleOnScroll = () => {
     const wScroll = window.scrollY
+    console.log(wScroll)
     let { visibleSection } = this.state
-    if ((wScroll + 300) > sectionHeight * 2 && !visibleSection['section3']) {
+    if (wScroll > sectionHeight * 2 && !visibleSection['section3']) {
       visibleSection['section3'] = true
       this.setState({ visibleSection })
     } else if (wScroll > 100 && !visibleSection['section2']) {
