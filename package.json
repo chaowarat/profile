@@ -1,10 +1,11 @@
 {
   "homepage": "http://chaowarat.github.io/profile",
   "name": "profile",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "private": true,
   "dependencies": {
     "react": "^16.4.2",
+    "react-countup": "^4.0.0-alpha.6",
     "react-dom": "^16.4.2",
     "react-scripts": "1.1.5"
   },

@@ -7,7 +7,6 @@
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -khtml-border-radius: 4px;
-  animation: fadeInTopToBottom 2s;
 }
 
 .card-container:before {
@@ -41,14 +40,147 @@
 }
 
 .card-body {
-  padding: 0 20px 0 20px;
   position: relative;
   height: 100%;
-  background: #ffffff;
+  width: 100%;
+  background: #fff;
   text-align: center;
   z-index: 10;
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -khtml-border-radius: 4px;
+}
+
+.card-body::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card-column.avatar {
+  margin-top: 5vw;
+}
+
+.card-column.avatar .title {
+  margin: 10px 0 10px 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: #171717;
+}
+
+.card-column.avatar .subtitle {
+  font-size: 18px;
+  color: #ff9800;
+}
+
+.card-body .card-column {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.card-avatar .image {
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  width: 15vw;
+  height: 15vw;
+  border: 3px solid #ffffff;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -khtml-border-radius: 100%;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-background {
+  z-index: -1;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -khtml-border-radius: 4px;
+}
+
+.card-body .card-background:after {
+  content: '';
+  position: absolute;
+  bottom: -15vw;
+  width: 200%;
+  height: 100%;
+  background: #ffffff;
+  left: auto;
+  right: -15vw;
+  transform: rotate(-6deg);
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  opacity: 0.9;
+}
+
+.card-column.detail {
+  color: #595959;
+  text-align: left;
+  margin-top: 8vw;
+  font-size: 18px;
+}
+
+.card-column.detail ul {
+  list-style: none;
+}
+
+.card-column.detail .achievement {
+  display: table;
+}
+
+.card-column.detail .achievement li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  margin: 0 20px 0 0;
+  float: left;
+  text-align: center;
+}
+
+.card-column.detail .achievement li span {
+  font-size: 52px;
+  font-weight: 900;
+}
+
+.card-column.detail .achievement li h4 {
+  margin: 0;
+}
+
+.card-column.detail .contact {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .card-body .card-column {
+    width: 100%;
+  }
+  .card-column.avatar .title {
+    color: #fff;
+  }
+  .card-background {
+    height: 50%;
+  }
+  .card-body .card-background:after {
+    display: none;
+  }
+  .card-column.detail {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    line-height: 25px;
+  }
 }

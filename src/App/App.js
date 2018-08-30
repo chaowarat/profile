@@ -3,6 +3,7 @@ import './App.css'
 import Profile from '../Profile/Profile'
 import Resume from '../Resume/Resume'
 import Works from '../Works/Works'
+import Skills from '../Skills/Skills'
 
 const sectionHeight = 500
 
@@ -21,7 +22,6 @@ class App extends Component {
 
   handleOnScroll = () => {
     const wScroll = window.scrollY
-    console.log(wScroll)
     let { visibleSection } = this.state
     if (wScroll > sectionHeight * 2 && !visibleSection['section3']) {
       visibleSection['section3'] = true
@@ -37,6 +37,7 @@ class App extends Component {
     return (
       <div className="app">
         <Profile />
+        <Skills />
         {!visibleSection.section2 ? <div className="app-empty" /> : <Resume />}
         {!visibleSection.section3 ? <div className="app-empty" /> : <Works />}
       </div>

@@ -3,100 +3,16 @@
   top: 0;
   height: 500px;
   width: 100%;
-  line-height: 500px;
   font-size: 21px;
   text-align: center;
   background: #50a3a2;
   background: -webkit-linear-gradient(top left, #48b1bf 0%, #0856c1 100%);
   background: linear-gradient(to bottom right, #48b1bf 0%, #0856c1 100%);
 }
-.profile-container div {
+
+.profile-container > div {
   -webkit-animation: fadein 2s;
   animation: fadein 2s;
-}
-
-.profile-container div div {
-  -webkit-animation: fadein 2s;
-  animation: fadein 2s;
-}
-
-.profile-container li {
-  position: absolute;
-  left: -300px;
-  list-style: none;
-  display: block;
-  -webkit-animation: square 30s infinite;
-  animation: square 30s infinite;
-  -webkit-transition-timing-function: linear;
-  transition-timing-function: linear;
-  border-radius: 4px;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -khtml-border-radius: 4px;
-}
-
-.profile-container li img {
-  width: 200px;
-  height: 200px;
-  opacity: 0.5;
-}
-
-.profile-container li:nth-child(1) {
-  top: 1%;
-}
-
-.profile-container li:nth-child(2) {
-  top: 10%;
-  width: 160px;
-  height: 160px;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-  -webkit-animation-duration: 34s;
-  animation-duration: 34s;
-}
-
-.profile-container li:nth-child(3) {
-  top: 20%;
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s;
-}
-
-.profile-container li:nth-child(4) {
-  top: 40%;
-  width: 120px;
-  height: 120px;
-  -webkit-animation-delay: 8s;
-  animation-delay: 8s;
-  -webkit-animation-duration: 44s;
-  animation-duration: 44s;
-}
-
-.profile-container li:nth-child(5) {
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
-  top: 50%;
-}
-
-@keyframes square {
-  0% {
-    -webkit-transform: translateX(0) rotate(200deg);
-    transform: translateX(0) rotate(200deg);
-  }
-  100% {
-    -webkit-transform: translateX(2000px) rotate(600deg);
-    transform: translateX(2000px) rotate(600deg);
-  }
-}
-
-@-webkit-keyframes square {
-  0% {
-    -webkit-transform: translateX(0) rotate(200deg);
-    transform: translateX(0) rotate(200deg);
-  }
-  100% {
-    -webkit-transform: translateX(2000px) rotate(600deg);
-    transform: translateX(2000px) rotate(600deg);
-  }
 }
 
 @keyframes fadein {
