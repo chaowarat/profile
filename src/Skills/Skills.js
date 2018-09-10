@@ -33,7 +33,7 @@ export default class Profile extends Component {
             {skillsL.map((sk, i) => (
               <div key={i} className="skills-row">
                 <label>{sk.text}</label>
-                <span className="rating-count pull-right">{sk.year} yrs</span>
+                <span className="rating-count pull-right">{sk.value} %</span>
                 <div className="skills-progress">
                   <div className="skills-progress-bar"
                     style={{
@@ -51,7 +51,7 @@ export default class Profile extends Component {
             {skillsR.map((sk, i) => (
               <div key={i} className="skills-row">
                 <label>{sk.text}</label>
-                <span className="rating-count pull-right">{sk.year} yrs</span>
+                <span className="rating-count pull-right">{sk.value} %</span>
                 <div className="skills-progress">
                   <div className="skills-progress-bar"
                     style={{

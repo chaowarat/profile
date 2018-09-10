@@ -13,7 +13,7 @@
 }
 
 .artcard-container:hover {
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.02);
 }
 
 .artcard-container .image {
@@ -82,6 +82,64 @@
   text-transform: lowercase;
   font-size: 13px;
   margin-top: 2px;
+}
+
+.image-gallery-image {
+  text-align: center;
+}
+
+.image-gallery-image img {
+  max-height: 100%;
+  width: auto;
+}
+
+.artcard-gallery-transparent {
+  background-color: transparent;
+}
+
+.image-gallery-thumbnail {
+  padding: 0 5px 0 5px;
+  border-width: 2px;
+  border-radius: 5px;
+}
+
+.image-gallery-thumbnail.active {
+  border-width: 2px;
+}
+
+.artcard-close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.artcard-close:hover {
+  opacity: 1;
+}
+
+.artcard-close:hover:after, .artcard-close:hover:before {
+  background-color: #0091EA;
+}
+
+.artcard-close:before, .artcard-close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 3px;
+  background-color: #fff;
+}
+
+.artcard-close:before {
+  transform: rotate(45deg);
+}
+
+.artcard-close:after {
+  transform: rotate(-45deg);
 }
 
 @keyframes fadein {
