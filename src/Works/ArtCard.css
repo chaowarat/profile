@@ -1,7 +1,8 @@
 .artcard-container {
   position: relative;
   width: 200px;
-  height: 280px;
+  height: 290px;
+  line-height: 16px;
   background-color: #fff;
   display: inline-block;
   margin: 10px;

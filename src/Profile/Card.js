@@ -26,7 +26,7 @@ export default class Card extends Component {
             <ul className="achievement">
               <li>
                 <span style={{ color: '#87c05e' }}>
-                  <CountUp end={14} duration={4} />
+                  <CountUp end={19} duration={4} />
                 </span>
                 <h4>projects</h4>
               </li>
