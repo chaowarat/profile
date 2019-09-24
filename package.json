@@ -1,19 +1,20 @@
 {
   "homepage": "http://chaowarat.github.io/profile",
   "name": "profile",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "private": true,
   "dependencies": {
-    "react": "^16.4.2",
-    "react-countup": "^4.0.0-alpha.6",
-    "react-dom": "^16.4.2",
-    "react-image-gallery": "^0.8.11",
-    "react-modal": "^3.5.1",
-    "react-scripts": "1.1.5"
+    "react": "latest",
+    "react-countup": "latest",
+    "react-dom": "latest",
+    "react-image-gallery": "latest",
+    "react-modal": "latest",
+    "react-scripts": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "rimraf build/**/*.map",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -21,5 +22,17 @@
   },
   "devDependencies": {
     "gh-pages": "^1.2.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
